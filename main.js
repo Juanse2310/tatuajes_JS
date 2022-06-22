@@ -14,18 +14,31 @@ if ((tatuaje1 == "") ||( tatuaje1 == null)) {
     }
 
 }
-/*while (tatuaje1){
-    if(tatuaje1 == "no")
-
-    tatuaje1 = prompt("Estas buscando un tatuaje?");
-}*/
 
 let altura = prompt("ingrese la altura del tatuaje ( en CM) ");
 let ancho = prompt("ingrese el ancho del tatuaje ( en CM) ");
 let color = prompt("es a color?? Si / No / No estoy seguro...tal vez.... no lo se... dudo... ");
 let diseno = prompt("ya sabes el diseño?? Si / No / quiero que me sorprendan....tal vez....... me faltan unos detallitos...");
-let mayorde = prompt("eres mayor de edad??");
-let mayorde2 = prompt("seguro no?");
+//let mayorde = prompt("eres mayor de edad??");
+//let mayorde2 = prompt("seguro no?");
+let mayorde = true;
+let seguro = 0;
+
+while (mayorde) {
+    prompt("eres mayor de edad?");
+
+    if(seguro == 2){
+        console.log("para che!");
+        mayorde =false;
+        //break;
+    }
+
+    seguro++;
+    alert("seguro???");
+
+}
+alert("ok... te creo");
+
 let nacimiento = prompt("ingrese año de nacimiento");
 let disenio = " ";
 let coloreado = " ";
