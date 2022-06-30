@@ -1,5 +1,14 @@
 alert("bienvenidos a la Casa de tatuajes");
+
+const numeros = ["Tatuajes", "Piercings", "Insumos", "Que mas?"];
+
+for (let i=0; i<4; i++) {
+    alert("Tenemos  -->  " + numeros[i]);
+}
+
+
 let tatuaje1 = prompt("Estas buscando presupuesto por un tatuaje?");
+
 
 if ((tatuaje1 == "") ||( tatuaje1 == null)) {
     let mensaje ="EY!!   Si o no??"
@@ -127,4 +136,5 @@ calculo_final = (calculo_subtotal + calculo_coloreado + calculo_diseno);
 console.log(calculo_final);
 
 alert("su presupuesto para pincharse es de: $" + calculo_final);
+
 
